@@ -79,6 +79,8 @@
 		24471C8A1B8765D400486666 /* ProgressHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24471C891B8765D400486666 /* ProgressHUDViewController.swift */; };
 		24471C8E1B87670B00486666 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 24471C8D1B87670B00486666 /* MBProgressHUD.m */; };
 		24471C901B876D5E00486666 /* PathCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24471C8F1B876D5E00486666 /* PathCoverViewController.swift */; };
+		24492D361BD9E02100F87811 /* ShopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24492D351BD9E02100F87811 /* ShopDetailView.swift */; settings = {ASSET_TAGS = (); }; };
+		24492D381BD9E2ED00F87811 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24492D371BD9E2ED00F87811 /* ScrollViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		24665C6A1B9445AD0091943A /* KCContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24665C691B9445AD0091943A /* KCContact.swift */; };
 		24665C6C1B9445B70091943A /* KCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24665C6B1B9445B70091943A /* KCMainViewController.swift */; };
 		24665C6E1B9445E60091943A /* KCContactGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24665C6D1B9445E60091943A /* KCContactGroup.swift */; };
@@ -256,6 +258,8 @@
 		24471C8C1B87670B00486666 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		24471C8D1B87670B00486666 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		24471C8F1B876D5E00486666 /* PathCoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathCoverViewController.swift; sourceTree = "<group>"; };
+		24492D351BD9E02100F87811 /* ShopDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopDetailView.swift; sourceTree = "<group>"; };
+		24492D371BD9E2ED00F87811 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		24665C691B9445AD0091943A /* KCContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCContact.swift; sourceTree = "<group>"; };
 		24665C6B1B9445B70091943A /* KCMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCMainViewController.swift; sourceTree = "<group>"; };
 		24665C6D1B9445E60091943A /* KCContactGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCContactGroup.swift; sourceTree = "<group>"; };
@@ -614,6 +618,8 @@
 				246E8C931B8864E100ABDF89 /* UIViewExtension.swift */,
 				246E8C911B8864A600ABDF89 /* LineView.swift */,
 				246E8C951B887EC100ABDF89 /* CollectionViewController.swift */,
+				24492D351BD9E02100F87811 /* ShopDetailView.swift */,
+				24492D371BD9E2ED00F87811 /* ScrollViewController.swift */,
 			);
 			name = item1;
 			sourceTree = "<group>";
@@ -1009,6 +1015,7 @@
 				24471BDC1B86CCBC00486666 /* SDWebImageCompat.m in Sources */,
 				24471C901B876D5E00486666 /* PathCoverViewController.swift in Sources */,
 				24665C6E1B9445E60091943A /* KCContactGroup.swift in Sources */,
+				24492D381BD9E2ED00F87811 /* ScrollViewController.swift in Sources */,
 				246E8CD61B89CADF00ABDF89 /* DoImagePickerController.m in Sources */,
 				24A34B421BB3C68000CFAEA1 /* QuoteCell.swift in Sources */,
 				246E8CCC1B89CADF00ABDF89 /* EAIntroPage.m in Sources */,
@@ -1031,6 +1038,7 @@
 				24471BE21B86CCBC00486666 /* UIButton+WebCache.m in Sources */,
 				24471AB21B86BE4200486666 /* AppDelegate.swift in Sources */,
 				24471BD91B86CCBC00486666 /* MKAnnotationView+WebCache.m in Sources */,
+				24492D361BD9E02100F87811 /* ShopDetailView.swift in Sources */,
 				24471BDF1B86CCBC00486666 /* SDWebImageDownloaderOperation.m in Sources */,
 				24471B971B86CC1400486666 /* MJRefreshGifHeader.m in Sources */,
 				24C7B3F31BB4F8F200BAD8D8 /* AddressChoicePickerView.swift in Sources */,

@@ -19,7 +19,7 @@ class Table1ViewController: UITableViewController {
             "MJRefresh刷新控件+SwipeableCell左滑编辑+EAintroView引导页面",
             "ProgressHUD进度提示控件+XActionSheet上拉菜单(自定义组件)+DoImagePicker照片选器",
             "PathCover个人主页+SDWebImage异步加载图片(清除图片缓存)+Extension扩展+自定义类型",
-            "PhotoBrowser照片浏览器"
+            "PhotoBrowser照片浏览器","自定义scrollView"
         ]
         
         self.tableView.tableFooterView = UIView()
@@ -56,6 +56,9 @@ class Table1ViewController: UITableViewController {
             self.performSegueWithIdentifier("PathCover", sender: nil)
         case 3:
             self.performSegueWithIdentifier("PhotoBrowser", sender: nil)
+        case 4:
+            let vc = ScrollViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         default :
             print("ssss", terminator: "")
         }
