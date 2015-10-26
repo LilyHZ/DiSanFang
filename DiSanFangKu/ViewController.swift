@@ -16,7 +16,7 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.tableView = UITableView(frame: CGRectMake(0, 66, self.view.frame.width, self.view.frame.height))//UITableView(frame: self.view.bounds)
+        self.tableView = UITableView(frame: self.view.bounds)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.view.addSubview(tableView)

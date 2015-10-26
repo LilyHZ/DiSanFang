@@ -19,7 +19,7 @@ class GroupAnyViewController: UIViewController,UITableViewDelegate,UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView = UITableView(frame: CGRectMake(0, 66, self.view.frame.width, self.view.frame.height), style: UITableViewStyle.Grouped)
+        self.tableView = UITableView(frame: self.view.frame, style: UITableViewStyle.Grouped)
         self.view.addSubview(self.tableView)
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -34,11 +34,11 @@ class GroupAnyViewController: UIViewController,UITableViewDelegate,UITableViewDa
     /**
     设置分区的头名称
     */
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.indexArray[section] as? String
-    }
+//    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return self.indexArray[section] as? String
+//    }
     /**
-    设置分区的头样式
+    设置分区的头样式及头名称
     */
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel(frame: CGRectMake(0, 0, self.view.frame.width, 20))

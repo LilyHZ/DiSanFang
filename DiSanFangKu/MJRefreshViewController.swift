@@ -21,7 +21,7 @@ class MJRefreshViewController: UIViewController ,UITableViewDelegate,UITableView
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.tableView = UITableView(frame: self.view.frame)
+        self.tableView = UITableView(frame: CGRectMake(0, 50, self.view.width, self.view.height))
         self.view.addSubview(self.tableView)
         self.tableView.delegate = self
         self.tableView.dataSource = self

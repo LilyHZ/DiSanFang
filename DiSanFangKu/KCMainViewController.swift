@@ -16,7 +16,7 @@ class KCMainViewController: UIViewController ,UITableViewDelegate,UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView = UITableView(frame: CGRectMake(0, 66, self.view.frame.width, self.view.frame.height), style: UITableViewStyle.Grouped)//(frame: self.view.frame, style: UITableViewStyle.Grouped)
+        self.tableView = UITableView(frame: self.view.frame, style: UITableViewStyle.Grouped)
         self.view.addSubview(self.tableView)
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -88,7 +88,7 @@ class KCMainViewController: UIViewController ,UITableViewDelegate,UITableViewDat
     返回每组行数
     */
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        NSLog("计算每组(组%i)行数",section)
+//        NSLog("计算每组(组%i)行数",section)
         
         let group:KCContactGroup = contacts[section] as! KCContactGroup
         
@@ -102,18 +102,30 @@ class KCMainViewController: UIViewController ,UITableViewDelegate,UITableViewDat
         let group:KCContactGroup = contacts[section] as! KCContactGroup
         
         NSLog("生成组（组%i）标题名称:%@",section,group.name);
+        
         return group.name
+    }
+    
+    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        
+        let group:KCContactGroup = contacts[section] as! KCContactGroup
+        let lab = UILabel(frame: CGRectMake(0, 0, self.view.width, 60))
+        lab.text = group.detail
+        
+        lab.backgroundColor = UIColor.greenColor()
+        
+        return lab
     }
     
     /**
     返回每组尾部说明
     */
-    func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        let group:KCContactGroup = contacts[section] as! KCContactGroup
-        
-        NSLog("生成组（组%i）尾部说明:%@",section,group.detail!);
-        return group.detail
-    }
+//    func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+//        let group:KCContactGroup = contacts[section] as! KCContactGroup
+//        
+//        NSLog("生成组（组%i）尾部说明:%@",section,group.detail!);
+//        return group.detail
+//    }
     
     /**
     返回每组标题索引 右侧边竖着显示
@@ -121,15 +133,13 @@ class KCMainViewController: UIViewController ,UITableViewDelegate,UITableViewDat
     func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
         NSLog("生成组索引");
 
-//        let indexs:NSMutableArray = NSMutableArray()
         var indexs = [String]()
         for(var i:Int=0;i<contacts.count;i++){
             let group:KCContactGroup = contacts[i] as! KCContactGroup
             
-//            indexs.addObject(group.name)
             indexs.append(group.name)
         }
-        return indexs//(indexs as? [String])
+        return indexs
     }
     
     /**
