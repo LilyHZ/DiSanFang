@@ -18,7 +18,7 @@
 		240D49341BB0543B00C6D1B5 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240D49321BB0543B00C6D1B5 /* MenuTableViewCell.swift */; };
 		240D49351BB0543B00C6D1B5 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240D49331BB0543B00C6D1B5 /* UserInfoTableViewCell.swift */; };
 		240D49371BB0546200C6D1B5 /* SliderBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240D49361BB0546200C6D1B5 /* SliderBoard.storyboard */; };
-		243183C71BD0FA2F00958441 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 243183C61BD0FA2F00958441 /* Podfile */; settings = {ASSET_TAGS = (); }; };
+		243183C71BD0FA2F00958441 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 243183C61BD0FA2F00958441 /* Podfile */; };
 		24471AB21B86BE4200486666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24471AB11B86BE4200486666 /* AppDelegate.swift */; };
 		24471AB41B86BE4200486666 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24471AB31B86BE4200486666 /* ViewController.swift */; };
 		24471AB71B86BE4200486666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24471AB51B86BE4200486666 /* Main.storyboard */; };
@@ -79,8 +79,14 @@
 		24471C8A1B8765D400486666 /* ProgressHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24471C891B8765D400486666 /* ProgressHUDViewController.swift */; };
 		24471C8E1B87670B00486666 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 24471C8D1B87670B00486666 /* MBProgressHUD.m */; };
 		24471C901B876D5E00486666 /* PathCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24471C8F1B876D5E00486666 /* PathCoverViewController.swift */; };
-		24492D361BD9E02100F87811 /* ShopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24492D351BD9E02100F87811 /* ShopDetailView.swift */; settings = {ASSET_TAGS = (); }; };
-		24492D381BD9E2ED00F87811 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24492D371BD9E2ED00F87811 /* ScrollViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		24492D361BD9E02100F87811 /* ShopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24492D351BD9E02100F87811 /* ShopDetailView.swift */; };
+		24492D381BD9E2ED00F87811 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24492D371BD9E2ED00F87811 /* ScrollViewController.swift */; };
+		245CB2F41BE06DB6006ECBB2 /* JSAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245CB2EE1BE06DB6006ECBB2 /* JSAnimatedImagesView.m */; };
+		245CB2F51BE06DB6006ECBB2 /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 245CB2F01BE06DB6006ECBB2 /* MSWeakTimer.m */; };
+		245CB2F61BE06DB6006ECBB2 /* RCAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245CB2F31BE06DB6006ECBB2 /* RCAnimatedImagesView.m */; };
+		245CB2F81BE07205006ECBB2 /* ImageScroll1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245CB2F71BE07205006ECBB2 /* ImageScroll1ViewController.swift */; };
+		245CB2FA1BE07214006ECBB2 /* ImageScroll2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245CB2F91BE07214006ECBB2 /* ImageScroll2ViewController.swift */; };
+		245CB3021BE074EC006ECBB2 /* gift1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 245CB3011BE074EB006ECBB2 /* gift1.gif */; };
 		24665C6A1B9445AD0091943A /* KCContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24665C691B9445AD0091943A /* KCContact.swift */; };
 		24665C6C1B9445B70091943A /* KCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24665C6B1B9445B70091943A /* KCMainViewController.swift */; };
 		24665C6E1B9445E60091943A /* KCContactGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24665C6D1B9445E60091943A /* KCContactGroup.swift */; };
@@ -158,7 +164,7 @@
 		240D49321BB0543B00C6D1B5 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		240D49331BB0543B00C6D1B5 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
 		240D49361BB0546200C6D1B5 /* SliderBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SliderBoard.storyboard; sourceTree = "<group>"; };
-		243183C61BD0FA2F00958441 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		243183C61BD0FA2F00958441 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		24471AAC1B86BE4200486666 /* DiSanFangKu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiSanFangKu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24471AB01B86BE4200486666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24471AB11B86BE4200486666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -260,6 +266,15 @@
 		24471C8F1B876D5E00486666 /* PathCoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathCoverViewController.swift; sourceTree = "<group>"; };
 		24492D351BD9E02100F87811 /* ShopDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopDetailView.swift; sourceTree = "<group>"; };
 		24492D371BD9E2ED00F87811 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		245CB2ED1BE06DB6006ECBB2 /* JSAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnimatedImagesView.h; sourceTree = "<group>"; };
+		245CB2EE1BE06DB6006ECBB2 /* JSAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnimatedImagesView.m; sourceTree = "<group>"; };
+		245CB2EF1BE06DB6006ECBB2 /* MSWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWeakTimer.h; sourceTree = "<group>"; };
+		245CB2F01BE06DB6006ECBB2 /* MSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWeakTimer.m; sourceTree = "<group>"; };
+		245CB2F21BE06DB6006ECBB2 /* RCAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCAnimatedImagesView.h; sourceTree = "<group>"; };
+		245CB2F31BE06DB6006ECBB2 /* RCAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCAnimatedImagesView.m; sourceTree = "<group>"; };
+		245CB2F71BE07205006ECBB2 /* ImageScroll1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScroll1ViewController.swift; sourceTree = "<group>"; };
+		245CB2F91BE07214006ECBB2 /* ImageScroll2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScroll2ViewController.swift; sourceTree = "<group>"; };
+		245CB3011BE074EB006ECBB2 /* gift1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gift1.gif; sourceTree = "<group>"; };
 		24665C691B9445AD0091943A /* KCContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCContact.swift; sourceTree = "<group>"; };
 		24665C6B1B9445B70091943A /* KCMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCMainViewController.swift; sourceTree = "<group>"; };
 		24665C6D1B9445E60091943A /* KCContactGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCContactGroup.swift; sourceTree = "<group>"; };
@@ -588,9 +603,31 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		245CB2EC1BE06DB6006ECBB2 /* JSAnimatedImagesView */ = {
+			isa = PBXGroup;
+			children = (
+				245CB2ED1BE06DB6006ECBB2 /* JSAnimatedImagesView.h */,
+				245CB2EE1BE06DB6006ECBB2 /* JSAnimatedImagesView.m */,
+				245CB2EF1BE06DB6006ECBB2 /* MSWeakTimer.h */,
+				245CB2F01BE06DB6006ECBB2 /* MSWeakTimer.m */,
+			);
+			path = JSAnimatedImagesView;
+			sourceTree = "<group>";
+		};
+		245CB2F11BE06DB6006ECBB2 /* RCAnimatedImagesView */ = {
+			isa = PBXGroup;
+			children = (
+				245CB2F21BE06DB6006ECBB2 /* RCAnimatedImagesView.h */,
+				245CB2F31BE06DB6006ECBB2 /* RCAnimatedImagesView.m */,
+			);
+			path = RCAnimatedImagesView;
+			sourceTree = "<group>";
+		};
 		24665C331B93EB6B0091943A /* source */ = {
 			isa = PBXGroup;
 			children = (
+				245CB2EC1BE06DB6006ECBB2 /* JSAnimatedImagesView */,
+				245CB2F11BE06DB6006ECBB2 /* RCAnimatedImagesView */,
 				24665C731B9453470091943A /* ChineseSorting */,
 				246E8CAF1B89CADF00ABDF89 /* EAIntroView */,
 				246E8CE01B89CB5D00ABDF89 /* SwipeableCell */,
@@ -620,6 +657,8 @@
 				246E8C951B887EC100ABDF89 /* CollectionViewController.swift */,
 				24492D351BD9E02100F87811 /* ShopDetailView.swift */,
 				24492D371BD9E2ED00F87811 /* ScrollViewController.swift */,
+				245CB2F71BE07205006ECBB2 /* ImageScroll1ViewController.swift */,
+				245CB2F91BE07214006ECBB2 /* ImageScroll2ViewController.swift */,
 			);
 			name = item1;
 			sourceTree = "<group>";
@@ -755,6 +794,7 @@
 		24D4EBC41B8B6AEC00730690 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				245CB3011BE074EB006ECBB2 /* gift1.gif */,
 				24471BEC1B86CCC300486666 /* cute_girl.jpg */,
 				24471BEB1B86CCC300486666 /* BG.png */,
 				24D4EBC51B8B6AEC00730690 /* image1.jpg */,
@@ -888,6 +928,7 @@
 				24471B921B86CC1400486666 /* MJRefresh.bundle in Resources */,
 				24471BE91B86CCBC00486666 /* ProgressHUD.bundle in Resources */,
 				24471BD41B86CCBC00486666 /* MenuBackground@2x.png in Resources */,
+				245CB3021BE074EC006ECBB2 /* gift1.gif in Resources */,
 				246E8CD11B89CADF00ABDF89 /* check@2x.png in Resources */,
 				246E8CD31B89CADF00ABDF89 /* close@2x.png in Resources */,
 				24D4EBC81B8B6AEC00730690 /* image1.jpg in Resources */,
@@ -970,10 +1011,12 @@
 				246E8C921B8864A600ABDF89 /* LineView.swift in Sources */,
 				24471B9D1B86CC1400486666 /* UIView+MJExtension.m in Sources */,
 				24471C111B86CD6200486666 /* AkiraTextField.swift in Sources */,
+				245CB2F41BE06DB6006ECBB2 /* JSAnimatedImagesView.m in Sources */,
 				24471BE61B86CCBC00486666 /* UIImageView+HighlightedWebCache.m in Sources */,
 				246E8CCE1B89CADF00ABDF89 /* EARestrictedScrollView.m in Sources */,
 				24471B9B1B86CC1400486666 /* UIScrollView+MJExtension.m in Sources */,
 				24471C131B86CD6200486666 /* IsaoTextField.swift in Sources */,
+				245CB2F51BE06DB6006ECBB2 /* MSWeakTimer.m in Sources */,
 				24471AB41B86BE4200486666 /* ViewController.swift in Sources */,
 				246E8CAC1B88C9D200ABDF89 /* XActionSheet.m in Sources */,
 				24471BD61B86CCBC00486666 /* XHPathCover.m in Sources */,
@@ -1012,6 +1055,7 @@
 				24471C161B86CD6200486666 /* MadokaTextField.swift in Sources */,
 				240D49301BB0531200C6D1B5 /* ContentsTwoViewController.swift in Sources */,
 				24471BDA1B86CCBC00486666 /* NSData+ImageContentType.m in Sources */,
+				245CB2F81BE07205006ECBB2 /* ImageScroll1ViewController.swift in Sources */,
 				24471BDC1B86CCBC00486666 /* SDWebImageCompat.m in Sources */,
 				24471C901B876D5E00486666 /* PathCoverViewController.swift in Sources */,
 				24665C6E1B9445E60091943A /* KCContactGroup.swift in Sources */,
@@ -1040,10 +1084,12 @@
 				24471BD91B86CCBC00486666 /* MKAnnotationView+WebCache.m in Sources */,
 				24492D361BD9E02100F87811 /* ShopDetailView.swift in Sources */,
 				24471BDF1B86CCBC00486666 /* SDWebImageDownloaderOperation.m in Sources */,
+				245CB2F61BE06DB6006ECBB2 /* RCAnimatedImagesView.m in Sources */,
 				24471B971B86CC1400486666 /* MJRefreshGifHeader.m in Sources */,
 				24C7B3F31BB4F8F200BAD8D8 /* AddressChoicePickerView.swift in Sources */,
 				24665C6A1B9445AD0091943A /* KCContact.swift in Sources */,
 				24471ADB1B86C1B900486666 /* Table1ViewController.swift in Sources */,
+				245CB2FA1BE07214006ECBB2 /* ImageScroll2ViewController.swift in Sources */,
 				24471B951B86CC1400486666 /* MJRefreshFooter.m in Sources */,
 				246E8C961B887EC100ABDF89 /* CollectionViewController.swift in Sources */,
 				24471C171B86CD6200486666 /* MinoruTextField.swift in Sources */,

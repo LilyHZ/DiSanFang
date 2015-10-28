@@ -1,0 +1,2 @@
+HEIMDALL_SWIFT_INCLUDE_PATHS[sdk=iphoneos*] = $(PODS_ROOT)/Heimdall/CommonCrypto/iphoneos/
+HEIMDALL_SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*] = $(PODS_ROOT)/Heimdall/CommonCrypto/iphonesimulator/

@@ -8,16 +8,26 @@
 
 import UIKit
 
-class ScrollViewController: UIViewController {
+class ScrollViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.whiteColor()
 
-        let vc = ShopDetailView(frame: CGRect(x: 0, y: 80, width: self.view.frame.width, height:45))
-        
+        let vc = ShopDetailView(frame: CGRect(x: 0, y: 60, width: self.view.frame.width, height:45))
         self.view.addSubview(vc)
+        
+        
+        let filePath = NSBundle.mainBundle().pathForResource("gift1", ofType: "gif")
+        let gif = NSData(contentsOfFile: filePath!)
+        let webViewBG = UIWebView(frame: CGRect(x: 0, y: 110, width: self.view.frame.width, height:320))
+        webViewBG.loadData(gif!, MIMEType: "image/gif", textEncodingName: String(), baseURL: NSURL())
+        webViewBG.userInteractionEnabled = false
+        
+        
+        self.view.addSubview(webViewBG)
+        
     }
 
     override func didReceiveMemoryWarning() {

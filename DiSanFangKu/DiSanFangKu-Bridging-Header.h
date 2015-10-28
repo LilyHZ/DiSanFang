@@ -9,3 +9,7 @@
 #import "SwipeableCell.h"
 #import "EAIntroView.h"
 #import "ChineseString.h"
+
+#import "RCAnimatedImagesView.h"
+#import "JSAnimatedImagesView.h"
+
