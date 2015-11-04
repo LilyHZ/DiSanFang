@@ -122,6 +122,7 @@
 		246E8CDE1B89CADF00ABDF89 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 246E8CCA1B89CADF00ABDF89 /* up.png */; };
 		246E8CDF1B89CADF00ABDF89 /* up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246E8CCB1B89CADF00ABDF89 /* up@2x.png */; };
 		246E8CE31B89CB5D00ABDF89 /* SwipeableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E8CE21B89CB5D00ABDF89 /* SwipeableCell.m */; };
+		247309FE1BE9F58600F12936 /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = 247309FD1BE9F58600F12936 /* address.json */; };
 		249742731BB2E34C00577D17 /* Play.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249742711BB2E34C00577D17 /* Play.swift */; };
 		249742741BB2E34C00577D17 /* Quotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249742721BB2E34C00577D17 /* Quotation.swift */; };
 		249742771BB2E3C500577D17 /* PlaysAndQuotations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 249742761BB2E3C500577D17 /* PlaysAndQuotations.plist */; };
@@ -132,7 +133,6 @@
 		24A34B421BB3C68000CFAEA1 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A34B411BB3C68000CFAEA1 /* QuoteCell.swift */; };
 		24C7B3F31BB4F8F200BAD8D8 /* AddressChoicePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C7B3F01BB4F8F200BAD8D8 /* AddressChoicePickerView.swift */; };
 		24C7B3F41BB4F8F200BAD8D8 /* AreaObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C7B3F11BB4F8F200BAD8D8 /* AreaObject.swift */; };
-		24C7B3F51BB4F8F200BAD8D8 /* AreaPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24C7B3F21BB4F8F200BAD8D8 /* AreaPlist.plist */; };
 		24C7B3F81BB4F94800BAD8D8 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C7B3F71BB4F94800BAD8D8 /* AddressViewController.swift */; };
 		24D4EBC81B8B6AEC00730690 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24D4EBC51B8B6AEC00730690 /* image1.jpg */; };
 		24D4EBC91B8B6AEC00730690 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24D4EBC61B8B6AEC00730690 /* image2.jpg */; };
@@ -325,6 +325,7 @@
 		246E8CCB1B89CADF00ABDF89 /* up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up@2x.png"; sourceTree = "<group>"; };
 		246E8CE11B89CB5D00ABDF89 /* SwipeableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeableCell.h; sourceTree = "<group>"; };
 		246E8CE21B89CB5D00ABDF89 /* SwipeableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeableCell.m; sourceTree = "<group>"; };
+		247309FD1BE9F58600F12936 /* address.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = address.json; sourceTree = "<group>"; };
 		249742711BB2E34C00577D17 /* Play.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Play.swift; sourceTree = "<group>"; };
 		249742721BB2E34C00577D17 /* Quotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quotation.swift; sourceTree = "<group>"; };
 		249742761BB2E3C500577D17 /* PlaysAndQuotations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlaysAndQuotations.plist; sourceTree = "<group>"; };
@@ -335,7 +336,6 @@
 		24A34B411BB3C68000CFAEA1 /* QuoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
 		24C7B3F01BB4F8F200BAD8D8 /* AddressChoicePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressChoicePickerView.swift; sourceTree = "<group>"; };
 		24C7B3F11BB4F8F200BAD8D8 /* AreaObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaObject.swift; sourceTree = "<group>"; };
-		24C7B3F21BB4F8F200BAD8D8 /* AreaPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AreaPlist.plist; sourceTree = "<group>"; };
 		24C7B3F71BB4F94800BAD8D8 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		24D4EBC51B8B6AEC00730690 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		24D4EBC61B8B6AEC00730690 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
@@ -783,10 +783,10 @@
 		24C7B3F61BB4F8F900BAD8D8 /* 自定义地址选择器 */ = {
 			isa = PBXGroup;
 			children = (
+				24C7B3F71BB4F94800BAD8D8 /* AddressViewController.swift */,
 				24C7B3F01BB4F8F200BAD8D8 /* AddressChoicePickerView.swift */,
 				24C7B3F11BB4F8F200BAD8D8 /* AreaObject.swift */,
-				24C7B3F21BB4F8F200BAD8D8 /* AreaPlist.plist */,
-				24C7B3F71BB4F94800BAD8D8 /* AddressViewController.swift */,
+				247309FD1BE9F58600F12936 /* address.json */,
 			);
 			name = "自定义地址选择器";
 			sourceTree = "<group>";
@@ -912,7 +912,7 @@
 				24471AB91B86BE4200486666 /* Images.xcassets in Resources */,
 				24471BED1B86CCC300486666 /* BG.png in Resources */,
 				24471BEE1B86CCC300486666 /* cute_girl.jpg in Resources */,
-				24C7B3F51BB4F8F200BAD8D8 /* AreaPlist.plist in Resources */,
+				247309FE1BE9F58600F12936 /* address.json in Resources */,
 				246E8CD51B89CADF00ABDF89 /* DoAlbumCell.xib in Resources */,
 				246E8CDB1B89CADF00ABDF89 /* down@2x.png in Resources */,
 				24D4EBC91B8B6AEC00730690 /* image2.jpg in Resources */,

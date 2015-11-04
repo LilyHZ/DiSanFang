@@ -9,19 +9,19 @@
 import UIKit
 
 class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPickerViewDelegate{
-
+    
     var block:((locate:AreaObject) -> Void)?
     
     var pickView:UIPickerView!
     var locate:AreaObject = AreaObject()
     //区域 数组
-    var regionArr:NSArray! = []
+    var regionArr :NSArray! = []
     //省 数组
-    var provinceArr:NSArray! = []
+    var provinceArr :NSArray! = []
     //城市 数组
-    var cityArr:NSArray! = []
+    var cityArr :NSArray! = []
     //区县 数组
-    var areaArr:NSArray = []
+    var areaArr :NSArray! = []
     
     var layview:UIView!
     var width:CGFloat!
@@ -46,11 +46,21 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
         let tap = UITapGestureRecognizer(target: self, action: "tap")
         self.view.addGestureRecognizer(tap)
         
-        let url = NSBundle.mainBundle().URLForResource("AreaPlist", withExtension: ".plist")
-        self.regionArr = NSArray(contentsOfURL: url!)!
+        let url = NSBundle.mainBundle().URLForResource("address", withExtension: ".json")
+        let data = NSData(contentsOfURL: url!)
+        let regionList = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+        
+        self.regionArr = regionList["regionList"] as! NSArray
+//        print("regionArr:\(regionArr.count)")
+        
         self.provinceArr = self.regionArr[0]["provinces"] as! NSArray
-        self.cityArr = self.provinceArr[0]["cities"] as! NSArray
-        self.areaArr = self.cityArr[0]["areas"] as! NSArray
+//        print("provinceArr:\(provinceArr.count)")
+        
+        self.cityArr = self.provinceArr[0]["cityList"] as! NSArray
+//        print("cityArr:\(cityArr.count)")
+        
+        self.areaArr = self.cityArr[0]["areaList"] as! NSArray
+//        print("areaArr:\(areaArr.count)")
         
         self.locate.region = self.regionArr[0]["region"]!! as! NSString
         self.locate.province = self.provinceArr[0]["province"]!! as! NSString
@@ -65,21 +75,21 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
         
         jiemian()
     }
-
+    
     /**
-    pickview消失
-    */
+     pickview消失
+     */
     func tap(){
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     /**
-    确定按钮
-    */
+     确定按钮
+     */
     func doneBtn(){
         self.block?(locate:self.locate)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-
+    
     required init? (coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -87,10 +97,10 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     /**
-    绘制界面
-    */
+     绘制界面
+     */
     private func jiemian(){
         self.layview = UIView(frame: CGRectMake(0, self.height*4/7 - 35 , self.width, self.height*3/7 + 35))
         self.layview.backgroundColor = UIColor.grayColor()
@@ -117,8 +127,8 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
     }
     
     /**
-    每列显示的文字
-    */
+     每列显示的文字，(component,row)哪一列，哪一行
+     */
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?{
         switch(component){
         case 0:
@@ -137,8 +147,8 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
     }
     
     /**
-    每列文字显示的字体样式
-    */
+     每列文字显示的字体样式
+     */
     func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView{
         
         let pickerLabel = UILabel()
@@ -154,8 +164,8 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
     }
     
     /**
-    选中每列文字改动
-    */
+     选中每列文字改动
+     */
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
         switch(component){
         case 0:
@@ -163,16 +173,16 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
             self.pickView.reloadComponent(1)
             self.pickView.selectRow(0, inComponent: 1, animated: true)
             
-            self.cityArr = self.provinceArr[0]["cities"]!! as! NSArray
+            self.cityArr = self.provinceArr[0]["cityList"]!! as! NSArray
             self.pickView.reloadComponent(2)
             self.pickView.selectRow(0, inComponent: 2, animated: true)
             
-            self.areaArr = self.cityArr[0]["areas"]!! as! NSArray
+            self.areaArr = self.cityArr[0]["areaList"]!! as! NSArray
             self.pickView.reloadComponent(3)
             self.pickView.selectRow(0, inComponent: 3, animated: true)
             
             self.locate.region = self.regionArr[row]["region"]!! as! NSString
-            self.locate.province = self.provinceArr[row]["province"]!! as! NSString
+            self.locate.province = self.provinceArr[0]["province"]!! as! NSString
             self.locate.city = self.cityArr[0]["city"]!! as! NSString
             if (self.areaArr.count > 0) {
                 self.locate.area = self.areaArr[0] as! NSString
@@ -181,16 +191,16 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
             }
         case 1:
             
-            self.cityArr = self.provinceArr[row]["cities"]!! as! NSArray
+            self.cityArr = self.provinceArr[row]["cityList"]!! as! NSArray
             self.pickView.reloadComponent(2)
             self.pickView.selectRow(0, inComponent: 2, animated: true)
             
             
-            self.areaArr = self.cityArr[0]["areas"]!! as! NSArray
+            self.areaArr = self.cityArr[0]["areaList"]!! as! NSArray
             self.pickView.reloadComponent(3)
             self.pickView.selectRow(0, inComponent: 3, animated: true)
             
-            self.locate.province = self.provinceArr[0]["province"]!! as! NSString
+            self.locate.province = self.provinceArr[row]["province"]!! as! NSString
             self.locate.city = self.cityArr[0]["city"]!! as! NSString
             if (self.areaArr.count > 0) {
                 self.locate.area = self.areaArr[0] as! NSString
@@ -198,7 +208,7 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
                 self.locate.area = "";
             }
         case 2:
-            self.areaArr = self.cityArr[row]["areas"]!! as! NSArray
+            self.areaArr = self.cityArr[row]["areaList"]!! as! NSArray
             self.pickView.reloadComponent(3)
             self.pickView.selectRow(0, inComponent: 3, animated: true)
             
@@ -222,12 +232,10 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
         
     }
     
-    // returns the number of 'columns' to display.
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int{
         return 4
     }
     
-    // returns the # of rows in each component..
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
         switch(component){
         case 0:
@@ -245,5 +253,5 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
         super.didReceiveMemoryWarning()
     }
     
-
+    
 }
