@@ -172,7 +172,7 @@ class AddressChoicePickerView: UIViewController ,UIPickerViewDataSource,UIPicker
             self.pickView.selectRow(0, inComponent: 3, animated: true)
             
             self.locate.region = self.regionArr[row]["region"]!! as! NSString
-            self.locate.province = self.provinceArr[0]["province"]!! as! NSString
+            self.locate.province = self.provinceArr[row]["province"]!! as! NSString
             self.locate.city = self.cityArr[0]["city"]!! as! NSString
             if (self.areaArr.count > 0) {
                 self.locate.area = self.areaArr[0] as! NSString
